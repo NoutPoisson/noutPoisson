@@ -1,0 +1,21 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Bateau</th>
+      <th scope="col">Poisson</th>
+      <th scope="col">Heure de pêche</th>
+      <th scope="col">Poids Estimé</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let p of peches">
+      <th scope="row">*</th>
+      <td>{{p.bateau}}</td>
+      <td>{{p.poisson}}</td>
+      <td>{{p.Heure}}</td>
+      <td>{{p.Poids}}</td>
+    </tr>
+  </tbody>
+</table>
+

@@ -3,7 +3,7 @@ const router = express.Router();
 
 const axios = require('axios');
 
-const PecheAPI = 'https://script.googleusercontent.com/macros/echo?user_content_key=DIjRihug0SJrj7yFulou6jdqAobkMxEmnAcnkmbz-lciVQXbQfBZrdNL5GXDUa_QxfB6WX2b2FQGCc6EtrNmG5dUcaUYcmmpm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnOUimS21FZo6D7sluF8pOkkSmRxfuFf0uVjW4ZXYJ7iW_stSOQScfqityz7t__V6ELhbSbv1AEW0&lib=MUGfYFarOSIdak15tqzuHwD4e4-6gCWR5';
+const PecheAPI = 'https://script.google.com/macros/s/AKfycbx43AGdWtjiHEk5LydY3alNlHxXzT-AudQr0wKhALae4-ROliAf/exec';
 
 //GET P0ST
 

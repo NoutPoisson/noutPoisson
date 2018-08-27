@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+// const reload = require ('reload');
+
 const axios = require('axios');
 
 const PecheAPI = 'https://script.google.com/macros/s/AKfycbx43AGdWtjiHEk5LydY3alNlHxXzT-AudQr0wKhALae4-ROliAf/exec';
@@ -19,9 +21,11 @@ router.get('/peches', (req, res) => {
     })
 
     .catch(error => {
-        res.status(500).send(error);
+        res.status(500).send("Pas de poissons");
     });
-
+    
 });
+// reload(router.);
+
 
 module.exports = router;

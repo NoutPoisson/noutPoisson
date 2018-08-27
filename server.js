@@ -3,6 +3,7 @@ const path = require('path');
 const app = express();
 
 
+
 //Getting our PECHES routes
 
 const routes = require('./server/routes/routes');
@@ -35,6 +36,8 @@ const forceSSL = function() {
 
 
 const port = process.env.PORT || 8080;
+
+
 
 app.listen(port, (req, res) => {
     console.log('RUNNING on port' + " " + port);

@@ -7,12 +7,13 @@ import { PechesComponent } from './peches/peches.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import {  PechesService } from './peches.service';
-import { TableComponent } from './table/table.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { ContactComponent } from './contact/contact.component';
+import { DishTableComponent } from './dish-table/dish-table.component';
 
 
 const Routes = [
@@ -27,10 +28,8 @@ const Routes = [
   },
   {
     path: 'contact', component: ContactComponent
-  },
-  {
-    path: 'table', component: TableComponent
   }
+ 
 
 
 ];
@@ -40,9 +39,10 @@ const Routes = [
   declarations: [
     AppComponent,
     PechesComponent,
-    TableComponent,
+    
     MainNavComponent,
-    ContactComponent
+    ContactComponent,
+    DishTableComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +54,10 @@ const Routes = [
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [PechesService],
   bootstrap: [AppComponent]

@@ -7,8 +7,8 @@ const PecheAPI = 'https://script.google.com/macros/s/AKfycbx43AGdWtjiHEk5LydY3al
 
 //GET P0ST
 
-router.get('/', (req, res) => {
-    res.send('it works')
+router.get('/home', (req, res) => {
+    res.send('it works');
 });
 
 router.get('/peches', (req, res) => {

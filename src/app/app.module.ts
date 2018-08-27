@@ -14,13 +14,14 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { ContactComponent } from './contact/contact.component';
 import { DishTableComponent } from './dish-table/dish-table.component';
+import { HomeComponent } from './home/home.component';
 
 
 const Routes = [
 
   {
     path: '',
-    redirectTo: 'peches',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -28,6 +29,9 @@ const Routes = [
   },
   {
     path: 'contact', component: ContactComponent
+  },
+  {
+    path: 'home', component: HomeComponent
   }
  
 
@@ -42,7 +46,8 @@ const Routes = [
     
     MainNavComponent,
     ContactComponent,
-    DishTableComponent
+    DishTableComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

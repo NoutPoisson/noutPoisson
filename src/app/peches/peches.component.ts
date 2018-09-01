@@ -1,5 +1,7 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Optional } from '@angular/core';
 import {  PechesService } from '../peches.service';
+
+
 
 @Component({
   selector: 'app-peches',
@@ -7,9 +9,10 @@ import {  PechesService } from '../peches.service';
   styleUrls: ['./peches.component.css'],
   providers: [PechesService]
 })
-export class PechesComponent implements OnInit, OnDestroy {
+export class PechesComponent implements OnInit {
 
 
+  
   peches: any = [];
   constructor(private pecheService: PechesService) {
     setInterval(() => this.reloadPage(), 15000);
@@ -17,14 +20,18 @@ export class PechesComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.pecheService.getAllPeches().subscribe(peches => {
       this.peches = peches;
+
+  
+       
+
+      console.log(peches)
     });
+   
 
   }
-  ngOnDestroy(): void {
-    this.pecheService.getAllPeches().subscribe(peches => {
-      this.peches = peches;
-    });
-  }
+
+  
+ 
   reloadPage() {
     // Solution 1:   
     //  this.router.navigate('localhost:4200/new');

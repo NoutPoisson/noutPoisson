@@ -21,5 +21,8 @@
   </tbody>
 </table>
 
-<button (click) = reloadPage()>Rafraîchir</button>
 
+
+<button ng-click = reloadPage()>Rafraîchir</button>
+<button ng-click="reload()">Reload</button>
+<button [routerLink]="['/peches']" (click)="reloadPage()">Exit</button>

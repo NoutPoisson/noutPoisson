@@ -1,0 +1,16 @@
+#wrapper {
+
+        background-repeat: no-repeat;
+        background-image: url(../../assets/images/slide01.jpg);
+        
+        height: 650px;
+        background-size: cover;
+        padding-top: 250px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+#wrapper h1{
+        font-size: 50px;
+      
+}

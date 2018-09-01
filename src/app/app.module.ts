@@ -17,6 +17,7 @@ import { DishTableComponent } from './dish-table/dish-table.component';
 import { HomeComponent } from './home/home.component';
 
 
+
 const Routes = [
 
   {
@@ -47,12 +48,13 @@ const Routes = [
     MainNavComponent,
     ContactComponent,
     DishTableComponent,
-    HomeComponent
+    HomeComponent,
+    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(Routes),
+    RouterModule.forRoot(Routes,),
     BrowserAnimationsModule,
     LayoutModule,
     MatToolbarModule,
